@@ -4,16 +4,32 @@
     <meta charset="utf-8">
     <style>
         a{
+            color:black;
             text-decoration: none;
         }
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        #active{
+            color: yellowgreen;
+        }
+        .saw{
+            color: gray;
+        }
+
     </style>
 </head>
 <body>
+    text-decoration은 글에 있는 모든 장식을 없앤다.
+    <h1>WEB - CSS</h1>
     <ol>
-        <li><a href="1.html">1</a></li>
-        <li><a href="2.html">2</a></li>
-        <li><a href="3.html">3</a></li>
-        <li><a href="4.html">4</a></li>
+        <li><a href="1.html" style="color:royalblue;text-decoration-line:underline;">1.html</a></li>
+        <li><a href="2.html" class="saw">2.html</a></li>
+        <li><a href="3.html" class="saw" id="active">3.html</a></li>
+        <li><a href="4.html">4.html</a></li>
     </ol>
+    <p>선택자 우선 순위 class > id > tag</p>
+    <p>모두 동일 하다면 마지막에 저장한 값으로 같아진다.</p>
 </body>
 </html>
